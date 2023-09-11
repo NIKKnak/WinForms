@@ -9,7 +9,26 @@ namespace WinFormsApp1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("asd");
+            ProgressBar();
+
+
+
         }
+
+        async void ProgressBar()
+        {
+            await Task.Run(async () =>
+            {
+                while (progressBar1.Value != 100)
+                {
+                    progressBar1.Value++;
+                    await Task.Delay(100);  // задержка милисек
+                }
+            });
+
+
+
+        }
+
     }
 }

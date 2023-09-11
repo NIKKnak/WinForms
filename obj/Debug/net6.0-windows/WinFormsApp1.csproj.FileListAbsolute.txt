@@ -3,7 +3,6 @@ C:\Users\nik88\OneDrive\Desktop\C#\WinFormsApp1\bin\Debug\net6.0-windows\WinForm
 C:\Users\nik88\OneDrive\Desktop\C#\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.runtimeconfig.json
 C:\Users\nik88\OneDrive\Desktop\C#\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.dll
 C:\Users\nik88\OneDrive\Desktop\C#\WinFormsApp1\bin\Debug\net6.0-windows\WinFormsApp1.pdb
-C:\Users\nik88\OneDrive\Desktop\C#\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.AssemblyReference.cache
 C:\Users\nik88\OneDrive\Desktop\C#\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.Form1.resources
 C:\Users\nik88\OneDrive\Desktop\C#\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.csproj.GenerateResource.cache
 C:\Users\nik88\OneDrive\Desktop\C#\WinFormsApp1\obj\Debug\net6.0-windows\WinFormsApp1.GeneratedMSBuildEditorConfig.editorconfig
