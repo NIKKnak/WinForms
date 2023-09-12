@@ -7,9 +7,20 @@ namespace WinFormsApp1
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        async private void button1_Click(object sender, EventArgs e)
         {
             ProgressBar();
+
+
+            char[] lines = "Я памятник себе воздвиг нерукотворный К нему не зарастет народная тропа".ToCharArray();
+
+
+            foreach (char line in lines)
+            {
+                label1.Text += line.ToString();
+                await Task.Delay(50);
+            }
+
 
 
 
@@ -22,13 +33,14 @@ namespace WinFormsApp1
                 while (progressBar1.Value != 100)
                 {
                     progressBar1.Value++;
-                    await Task.Delay(100);  // задержка милисек
+                    await Task.Delay(10);  // задержка милисек
                 }
             });
 
 
 
         }
+
 
     }
 }
