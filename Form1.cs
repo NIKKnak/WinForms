@@ -11,18 +11,22 @@ namespace WinFormsApp1
         {
             ProgressBar();
 
-            textBox1.Text = textBox1.Text.Replace("еще", "ещё");
+            if (button1.Text == "Исправить текст")
+            {
+                textBox1.Text = textBox1.Text.Replace("еще", "ещё").Replace("еж", "ёж");
+                await Task.Delay(500);
+                button1.Text = "Исправлено";
+                await Task.Delay(500);
+                button1.Text = "Скопировать текст ?";
+            }
 
 
-            await Task.Delay(500);
-            button1.Text = "Исправлено";
-
-            Clipboard.SetDataObject(textBox1.Text);
-
-            await Task.Delay(500);
-            button1.Text = "Текст скопирован";
-
-
+            if (progressBar1.Value == 100)
+            {
+                await Task.Delay(500);
+                button1.Text = "Текст скопирован";
+                Clipboard.SetDataObject(textBox1.Text);
+            }
         }
 
         async void ProgressBar()
