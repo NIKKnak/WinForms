@@ -17,10 +17,10 @@ namespace WinFormsApp1
             await Task.Delay(500);
             button1.Text = "Исправлено";
 
-            await Task.Delay(500);
-            button1.Text = "Скопировать ?";
-
             Clipboard.SetDataObject(textBox1.Text);
+
+            await Task.Delay(500);
+            button1.Text = "Текст скопирован";
 
 
         }
