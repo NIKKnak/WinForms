@@ -11,17 +11,16 @@ namespace WinFormsApp1
         {
             ProgressBar();
 
-
-            char[] lines = "Я памятник себе воздвиг нерукотворный К нему не зарастет народная тропа".ToCharArray();
-
-
-            foreach (char line in lines)
-            {
-                label1.Text += line.ToString();
-                await Task.Delay(50);
-            }
+            textBox1.Text = textBox1.Text.Replace("еще", "ещё");
 
 
+            await Task.Delay(500);
+            button1.Text = "Исправлено";
+
+            await Task.Delay(500);
+            button1.Text = "Скопировать ?";
+
+            Clipboard.SetDataObject(textBox1.Text);
 
 
         }
